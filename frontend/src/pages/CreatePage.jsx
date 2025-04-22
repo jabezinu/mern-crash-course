@@ -47,19 +47,8 @@ const CreatePage = () => {
 							value={newProduct.name}
 							onChange={(e) => setNewProduct({ ...newProduct, name: e.target.value })}
 						/>
-						<Input
-							placeholder='Price'
-							name='price'
-							type='number'
-							value={newProduct.price}
-							onChange={(e) => setNewProduct({ ...newProduct, price: e.target.value })}
-						/>
-						<Input
-							placeholder='Image URL'
-							name='image'
-							value={newProduct.image}
-							onChange={(e) => setNewProduct({ ...newProduct, image: e.target.value })}
-						/>
+						<Input placeholder='Price' name='price' type='number' value={newProduct.price} onChange={(e) => setNewProduct({ ...newProduct, price: e.target.value })}/>
+						<Input placeholder='Image URL' name='image' value={newProduct.image} onChange={(e) => setNewProduct({ ...newProduct, image: e.target.value })}/>
 
 						<Button colorScheme='blue' onClick={handleAddProduct} w='full'>
 							Add Product
